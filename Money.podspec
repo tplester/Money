@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name              = "Money"
-  s.version           = "2.0.1"
+  s.version           = "3.0.0-beta.1"
   s.summary           = "Swift types for working with Money."
   s.description       = <<-DESC
-  
-  Money is a Swift cross platform framework for iOS, watchOS, tvOS and OS X. 
-  
-  It provides types and functionality to help represent and manipulate money 
+
+  Money is a Swift cross platform framework for iOS, watchOS, tvOS and OS X.
+
+  It provides types and functionality to help represent and manipulate money
   and currency related information.
 
                        DESC
@@ -25,11 +25,11 @@ Pod::Spec.new do |s|
   s.source_files = [
     'Sources/*.swift'
   ]
-  
+
   s.osx.exclude_files = [ 'Sources/ApplePay.swift' ]
   s.watchos.exclude_files = [ 'Sources/ApplePay.swift' ]
-  s.tvos.exclude_files = [ 'Sources/ApplePay.swift' ]  
-  
+  s.tvos.exclude_files = [ 'Sources/ApplePay.swift' ]
+
   s.dependency 'ValueCoding', '~> 2'
 
 end
