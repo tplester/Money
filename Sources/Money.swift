@@ -81,7 +81,7 @@ public struct Money: MoneyProtocol {
 extension Money: Equatable {
 
     public static func ==(lhs: Money, rhs: Money) -> Bool {
-        return lhs.decimal == rhs.decimal
+        return lhs.minorUnits == rhs.minorUnits
             && lhs.currency.code == rhs.currency.code
             && lhs.currency.scale == rhs.currency.scale
             && lhs.currency.symbol == rhs.currency.symbol

@@ -267,10 +267,6 @@ The `_Money<C: CurrencyType>` type composes a `_Decimal<C>`. Its behavior is pro
 ### Why not use `NSDecimal`?
 `NSDecimal` would be a better storage type for `_Decimal`, however it doesn’t have the full `NSDecimalNumberBehaviors` support that `NSDecimalNumber` enjoys. In particular, specifying the scale is problematic. If anyone has any smart ideas, please get in touch. I’ve added an equivalent extension on `NSDecimal` as for `NSDecimalNumber`.
 
-### `ValueCoding`
-Both `_Decimal`, `_Money` and `FXTransaction` all conform to [`ValueCoding`](https://github.com/danthorpe/ValueCoding) which means they can be encoded and stored inside archives.
-
-
 ## Author
 Daniel Thorpe [@danthorpe](https://twitter.com/danthorpe). 
 
